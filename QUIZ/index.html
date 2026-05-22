@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVALUACION</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center><h1>E-Commerce Online</h1></center>
-    <p>Vivimos la pasion por el <strong>ciclismo</strong>. Ofrecemos bicicletas con materiales modulares de la alta ciudad, diseñadas para cualquier terreno y respaldas por nuestro excelente servicio al cliente.  </p>
-    <h2>Categorias Disponibles</h2>
-    <ul>
-      <li class="bicicleta">Bicicletas de <strong>Montaña</strong>(MTB)</li>
-      <li class="bicicleta">Bicicletas de <strong>Ruta</strong></li>
-      <li class="bicicleta">Bicicletas de <strong>Urbanas</strong></li>
-      <li class="bicicleta">Bicicleta <strong>Electricas</strong>(E-Bikes)</li>
-    </ul>
-    <h2>Pasos para comprar</h2>
-    <ol>
-      <li>Elige tu metodo favorito.</li>
-      <li>Llena tus datos de contacto en el formulario.</li>
-      <li>¡Preparate para salir a rodar!</li>
-    </ol>
-    <h3>Dejanos tus datos</h3>
-    <div class="form-container">
-        <form>
-            <input type="text" placeholder="Nombre Completo (Ej: Juan Pérez)" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
-            
-            <button type="submit" class="btn-register">Registrarme</button>
-        </form>
-    </div>
+
+    <main class="card">
+        <header>
+            <h1>E-Commerce Online</h1>
+            <p>Vivimos la pasión por el <span class="ciclismo">ciclismo</span>. Ofrecemos bicicletas con materiales modulares de la más alta calidad, diseñadas para cualquier terreno y respaldadas por nuestro excelente servicio al cliente.</p>
+        </header>
+
+        <section>
+            <h2>Categorías Disponibles</h2>
+            <ul>
+                <li>Bicicletas de <span class="ciclismo">Montaña</span> (MTB)</li>
+                <li>Bicicletas de <span class="ciclismo">Ruta</span></li>
+                <li>Bicicletas de <span class="ciclismo">Urbanas</span></li>
+                <li>Bicicletas <span class="ciclismo">Eléctricas</span> (E-Bikes)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Pasos para Comprar</h2>
+            <ol>
+                <li>Elige tu modelo favorito.</li>
+                <li>Llena tus datos de contacto en el formulario.</li>
+                <li>¡Prepárate para salir a rodar!</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h3 class="titulo">Déjanos tus datos</h3>
+            <form>
+                <input type="text" placeholder="Nombre Completo (Ej: Juan Pérez)" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" class="registro">Registrarme</button>
+            </form>
+        </section>
+    </main>
+
 </body>
 </html>
