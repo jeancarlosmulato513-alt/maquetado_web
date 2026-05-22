@@ -23,17 +23,14 @@
       <li>¡Preparate para salir a rodar!</li>
     </ol>
     <h3>Dejanos tus datos</h3>
-    <form>
-
-    </form>
-        <form action="#" method="post">
-        <input type="text" id="name" name="name" rows="2" cols="20" required placeholder="Nombre completo (Ej: Juan Perez)">
-<br>
-        <input type="email" id="email" name="email" rows="2" cols="20" required placeholder="tu@email.com">
-<br>
-        <textarea id="contraseña" name="contraseña" rows="2" cols="20" required placeholder="Contraseña"></textarea>
-<br>
-        <button id="submit-btn" type="submit">Registrarme</button>
-    </form>
+    <div class="form-container">
+        <form>
+            <input type="text" placeholder="Nombre Completo (Ej: Juan Pérez)" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            
+            <button type="submit" class="btn-register">Registrarme</button>
+        </form>
+    </div>
 </body>
 </html>
