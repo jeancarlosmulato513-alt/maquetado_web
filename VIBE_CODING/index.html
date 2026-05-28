@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recibo Green & Blue</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="receipt">
+
+    <!-- HEADER -->
+    <div class="top">
+
+        <!-- LOGO -->
+        <div>
+
+            <div class="logo">
+                <span class="green">GREEN</span>
+                &
+                <span class="blue">BLUE</span>
+            </div>
+
+            <div class="aqua">
+                aquamarine
+            </div>
+
+            <div class="slogan">
+                Efecto y prevención en la funcionalidad física
+            </div>
+
+        </div>
+
+        <!-- CENTER -->
+        <div class="center">
+
+            <!-- SERVICES -->
+            <div class="services">
+
+                <label class="service-item">
+                    <input type="checkbox" id="rehabilitacion">
+                    REHABILITACIÓN
+                </label>
+
+                <label class="service-item">
+                    <input type="checkbox" id="entretenimiento">
+                    ENTRETENIMIENTO
+                </label>
+
+                <label class="service-item">
+                    <input type="checkbox" id="masajes">
+                    MASAJES
+                </label>
+
+                <label class="service-item">
+                    <input type="checkbox" id="natacion">
+                    NATACIÓN
+                </label>
+
+            </div>
+
+            <!-- PHONE -->
+            <div class="phone">
+                📞 318 868 8008 / 310 740 6038
+            </div>
+
+            <!-- DATES -->
+            <div class="dates">
+
+                <div>
+                    Fecha Inicio
+                    <br>
+                    <input type="date" id="fechaInicio">
+                </div>
+
+                <div>
+                    Fecha Finalización
+                    <br>
+                    <input type="date" id="fechaFin">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RECEIPT NUMBER -->
+        <div class="receipt-number">
+
+            <div class="recibo">
+                RECIBO
+            </div>
+
+            <div class="redbox">
+                Nº <span id="numeroRecibo">0476</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <div class="row">
+
+        Señor(es):
+        <input type="text" id="nombre" class="flex">
+
+        Dirección:
+        <input type="text" id="direccion" class="flex">
+
+    </div>
+
+    <div class="row">
+
+        Teléfono:
+        <input type="text" id="telefono" class="flex">
+
+        Ciudad:
+        <input type="text" id="ciudad" class="flex">
+
+        Edad:
+        <input type="number" id="edad" class="small">
+
+        Peso:
+        <input type="text" id="peso" class="small">
+
+        Talla:
+        <input type="text" id="talla" class="small">
+
+        PPL:
+        <input type="text" id="ppl" class="small">
+
+    </div>
+
+    <!-- TABLE -->
+
+    <table>
+
+        <tr>
+            <th width="80%">DESCRIPCIÓN</th>
+            <th>VR. TOTAL</th>
+        </tr>
+
+        <tr>
+            <td><input type="text" class="descripcion"></td>
+            <td><input type="number" class="valor"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" class="descripcion"></td>
+            <td><input type="number" class="valor"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" class="descripcion"></td>
+            <td><input type="number" class="valor"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" class="descripcion"></td>
+            <td><input type="number" class="valor"></td>
+        </tr>
+
+        <tr>
+
+            <td class="obs">
+
+                <textarea id="observaciones">
+OBSERVACIONES:
+                </textarea>
+
+            </td>
+
+            <td class="total-cell">
+
+                TOTAL: $
+                <span id="total">0</span>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <div class="sign">
+            FIRMA DEL INSTRUCTOR
+        </div>
+
+        <div class="sign">
+            FIRMA DEL USUARIO
+        </div>
+
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div class="buttons">
+
+        <button class="save" onclick="guardarDatos()">
+            Guardar Datos
+        </button>
+
+        <button class="load" onclick="cargarDatos()">
+            Cargar Datos
+        </button>
+
+        <button class="new" onclick="nuevoRecibo()">
+            Nuevo Recibo
+        </button>
+
+        <button class="print" onclick="window.print()">
+            Imprimir
+        </button>
+
+        <button class="clear" onclick="limpiarTodo()">
+            Limpiar
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

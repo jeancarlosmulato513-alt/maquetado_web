@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --paper:#c7eef0;
+    --ink:#2d5f63;
+    --line:#5b8b8d;
+    --green:#5e8f2d;
+    --blue:#1d5fc1;
+    --red:#c62828;
+}
+
+body{
+    background:#e8e8e8;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:30px;
+}
+
+.receipt{
+    width:1000px;
+    margin:auto;
+    background:var(--paper);
+    padding:20px;
+    border:1px solid #9bbec0;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+/* ======================
+HEADER
+====================== */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:15px;
+}
+
+.logo{
+    font-size:38px;
+    font-weight:900;
+    line-height:35px;
+}
+
+.green{
+    color:var(--green);
+}
+
+.blue{
+    color:var(--blue);
+}
+
+.aqua{
+    margin-left:15px;
+    font-size:20px;
+    font-style:italic;
+    letter-spacing:3px;
+}
+
+.slogan{
+    font-size:11px;
+    margin-top:3px;
+}
+
+.center{
+    flex:1;
+    padding:0 20px;
+}
+
+/* ======================
+SERVICES
+====================== */
+
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.service-item{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    cursor:pointer;
+}
+
+.service-item input{
+    width:14px;
+    height:14px;
+    cursor:pointer;
+}
+
+/* ======================
+PHONE
+====================== */
+
+.phone{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+/* ======================
+DATES
+====================== */
+
+.dates{
+    display:flex;
+    gap:25px;
+}
+
+.dates input{
+    margin-top:5px;
+    padding:5px;
+    border:1px solid var(--line);
+    background:transparent;
+    border-radius:4px;
+    outline:none;
+    color:var(--ink);
+}
+
+/* ======================
+RECIBO BOX
+====================== */
+
+.receipt-number{
+    text-align:center;
+}
+
+.recibo{
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.redbox{
+    border:2px solid var(--red);
+    border-radius:8px;
+    padding:8px 20px;
+    color:var(--red);
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* ======================
+FORM ROWS
+====================== */
+
+.row{
+    display:flex;
+    gap:10px;
+    margin-top:12px;
+    align-items:center;
+    font-size:13px;
+}
+
+.row input{
+    border:none;
+    border-bottom:1px solid var(--ink);
+    background:transparent;
+    outline:none;
+    padding:3px;
+    color:var(--ink);
+}
+
+.flex{
+    flex:1;
+}
+
+.small{
+    width:60px;
+}
+
+/* ======================
+TABLE
+====================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    border:1px solid var(--line);
+    padding:8px;
+    font-size:14px;
+}
+
+td{
+    border:1px solid var(--line);
+    height:40px;
+}
+
+td input{
+    width:100%;
+    height:100%;
+    border:none;
+    background:transparent;
+    padding:8px;
+    outline:none;
+    color:var(--ink);
+}
+
+.obs{
+    height:90px;
+}
+
+.obs textarea{
+    width:100%;
+    height:100%;
+    resize:none;
+    border:none;
+    background:transparent;
+    padding:8px;
+    outline:none;
+    color:var(--ink);
+}
+
+.total-cell{
+    padding:10px;
+    font-weight:bold;
+}
+
+/* ======================
+FOOTER
+====================== */
+
+.footer{
+    display:flex;
+    justify-content:space-around;
+    margin-top:60px;
+}
+
+.sign{
+    width:280px;
+    border-top:1px solid var(--ink);
+    text-align:center;
+    padding-top:5px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* ======================
+BUTTONS
+====================== */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+button{
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+    font-size:14px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.save{
+    background:#1565c0;
+}
+
+.load{
+    background:#2e7d32;
+}
+
+.print{
+    background:#6a1b9a;
+}
+
+.clear{
+    background:#c62828;
+}
+
+.new{
+    background:#ef6c00;
+}
+
+@media print{
+
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .buttons{
+        display:none;
+    }
+
+    .receipt{
+        box-shadow:none;
+        border:none;
+    }
+
+}
